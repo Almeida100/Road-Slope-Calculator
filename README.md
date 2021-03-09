@@ -21,4 +21,5 @@ Outputs: a new line vector layer, segmented, with two new fields:
 
 Please start RSC plugin at Processing Toolbox:
 
-![image](https://user-images.githubusercontent.com/37844852/110397321-8e2a7280-8069-11eb-95a3-356154fab8eb.png)
+
+![image](https://user-images.githubusercontent.com/37844852/110529357-12840080-8111-11eb-97d1-54c622a5cb07.png)
