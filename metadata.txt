@@ -4,9 +4,9 @@
 
 [general]
 name=Road Slope Calculator
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.14
 description=This algorithm is used to calculate the longitudinal slope of forest paths and roads, based on a 2D line vector layer and a DEM (Digital Elevation Model). It should not be used on national road systems, such as highways, motorways, national and regional roads, which have engineering works designed to smooth the slope (bridges, excavations, landfills, etc.), unless the user has access to a high precision Digital Surface Model (DSM).
-version=0.1
+version=0.2
 author=Antonio Sobral Almeida
 email=66124.almeida@gmail.com
 
