@@ -100,7 +100,7 @@ class RoadSlopeCalculatorAlgorithm(QgsProcessingAlgorithm):
             'INPUT': outputs['ExtractZValues']['OUTPUT'],
             'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
         }
-        outputs['FieldCalculator1'] = processing.run('native:fieldcalculator', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        outputs['FieldCalculator1'] = processing.run('qgis:fieldcalculator', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
 
         feedback.setCurrentStep(4)
         if feedback.isCanceled():
@@ -116,7 +116,7 @@ class RoadSlopeCalculatorAlgorithm(QgsProcessingAlgorithm):
             'INPUT': outputs['FieldCalculator1']['OUTPUT'],
             'OUTPUT': parameters['CalculatedRoadSlopes']
         }
-        outputs['FieldCalculator2'] = processing.run('native:fieldcalculator', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        outputs['FieldCalculator2'] = processing.run('qgis:fieldcalculator', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
         results['CalculatedRoadSlopes'] = outputs['FieldCalculator2']['OUTPUT']
         return results
 
