@@ -20,7 +20,7 @@ Outputs: a new line vector layer, segmented, with two new fields:
 
   "Slope_%", with the longitudinal slope of each segment, in percentage.
  
-Fine tuning the outcome of this plugin:
+Increasing plugin resolution:
 
 There are two main factors that allow you to improve the results of this plugin, regardless of the DEM’s accuracy: reducing the pixel size of the DEM and using an appropriate type of interpolation to carry out this reduction.
 For this purpose, the user can use the "Warp (Reproject)" tool from the RASTER -> PROJECTIONS menu, using the following options:
