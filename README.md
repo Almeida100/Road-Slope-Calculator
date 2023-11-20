@@ -26,7 +26,7 @@ There are two main factors that allow you to improve the results of this plugin,
 For this purpose, the user can use the "Warp (Reproject)" tool from the RASTER -> PROJECTIONS menu, using the following options:
 - Resampling method: Cubic Spline (my suggestion);
 - NODATA value: -9999 (my suggestion);
-- Output file resolution: this is the key factor! Write here the new pixel size in map units;
+- Output file resolution: this is the key factor! Write here the new pixel size in map units; for most cases, a pixel size of 10 meters should be reasonable;
 - Output data type: at least "Float32" (my suggestion).
  
 Please start RSC plugin at Processing Toolbox:
