@@ -112,7 +112,7 @@ class RoadSlopeCalculatorAlgorithm(QgsProcessingAlgorithm):
             'FIELD_NAME': 'Slope_%',
             'FIELD_PRECISION': 3,
             'FIELD_TYPE': 0,
-            'FORMULA': '(abs(\"z_first\" - \"z_last\") / \"length\" ) *100',
+            'FORMULA': '(abs(\"z_first\" - \"z_last\") / \"Length\" ) *100',
             'INPUT': outputs['FieldCalculator1']['OUTPUT'],
             'OUTPUT': parameters['CalculatedRoadSlopes']
         }
