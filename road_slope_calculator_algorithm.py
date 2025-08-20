@@ -23,14 +23,14 @@ It should not be used on national road systems, such as highways, motorways, nat
  ***************************************************************************/
 """
 
-from qgis.core import QgsProcessing
-from qgis.core import QgsProcessingAlgorithm
-from qgis.core import QgsProcessingMultiStepFeedback
-from qgis.core import QgsProcessingParameterRasterLayer
-from qgis.core import QgsProcessingParameterFeatureSink
-from qgis.core import QgsProcessingParameterBoolean
-from qgis.core import QgsProcessingParameterVectorLayer
-from qgis.core import QgsProcessingParameterNumber
+from qgis.core import (QgsProcessing,
+                      QgsProcessingAlgorithm,
+                      QgsProcessingMultiStepFeedback,
+                      QgsProcessingParameterRasterLayer,
+                      QgsProcessingParameterFeatureSource,
+                      QgsProcessingParameterFeatureSink,
+                      QgsProcessingParameterBoolean,
+                      QgsProcessingParameterNumber)
 import processing
 
 
@@ -40,7 +40,7 @@ class RoadSlopeCalculatorAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(QgsProcessingParameterRasterLayer('MDT', 'Digital Elevation Model (DEM)', defaultValue=None))
         self.addParameter(QgsProcessingParameterFeatureSink('CalculatedRoadSlopes', 'Calculated road slopes', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, supportsAppend=True, defaultValue=None))
         self.addParameter(QgsProcessingParameterBoolean('VERBOSE_LOG', 'Verbose logging', optional=True, defaultValue=False))
-        self.addParameter(QgsProcessingParameterVectorLayer('Shapedecaminhos', 'Road network vector layer', types=[QgsProcessing.TypeVectorLine], defaultValue=None))
+        self.addParameter(QgsProcessingParameterFeatureSource('Shapedecaminhos', 'Road network vector layer', types=[QgsProcessing.TypeVectorLine], defaultValue=None))
         self.addParameter(QgsProcessingParameterNumber('Comprimentodossegmentos', 'Segment length (=> 5 times pixel size)', type=QgsProcessingParameterNumber.Double, maxValue=1.79769e+308, defaultValue=250))
 
     def processAlgorithm(self, parameters, context, model_feedback):
