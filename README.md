@@ -22,12 +22,8 @@ Outputs: a new line vector layer, segmented, with two new fields:
  
 Increasing plugin resolution:
 
-There are two main factors that allow you to improve the results of this plugin, regardless of the DEM’s accuracy: reducing the pixel size of the DEM and using an appropriate type of interpolation to carry out this reduction.
-For this purpose, the user can use the "Warp (Reproject)" tool from the RASTER -> PROJECTIONS menu, using the following options:
-- Resampling method: Cubic Spline (my suggestion);
-- NODATA value: -9999 (my suggestion);
-- Output file resolution: this is the key factor! Write here the new pixel size in map units; for most cases, a pixel size of 10 meters should be reasonable;
-- Output data type: at least "Float32" (my suggestion).
+Pixel size is very important when it comes to the accuracy of slope calculation.
+Try to use a DTM or DSM with the highest resolution (smallest pixel size) possible, as well as an output data type of Float32.
  
 Please start RSC plugin at Processing Toolbox:
 
