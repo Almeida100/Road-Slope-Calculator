@@ -23,7 +23,7 @@ Outputs: a new line vector layer, segmented, with two new fields:
 Increasing plugin resolution:
 
 Pixel size is very important when it comes to the accuracy of slope calculation.
-Try to use a DEM or DSM with the highest resolution (smallest pixel size) possible, as well as a data type of Float32.
+The most suitable resolution (pixel size) for this purpose is between 10 and 15 meters, with a Float32 data type.
  
 Please start RSC plugin at Processing Toolbox:
 
