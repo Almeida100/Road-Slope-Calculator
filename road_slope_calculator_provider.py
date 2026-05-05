@@ -64,7 +64,7 @@ class RoadSlopeCalculatorProvider(QgsProcessingProvider):
         string should be a unique, short, character only string, eg "qgis" or
         "gdal". This string should not be localised.
         """
-        return 'Road slope'
+        return 'roadslopecalculator'
 
     def name(self):
         """

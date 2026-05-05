@@ -5,29 +5,29 @@
 [general]
 name=Road Slope Calculator
 qgisMinimumVersion=3.14
+qgisMaximumVersion=4.99
 description=This algorithm is used to calculate the longitudinal slope of forest paths and roads, based on a 2D line vector layer and a DEM (Digital Elevation Model). It should not be used on national road systems, such as highways, motorways, national and regional roads, which have engineering works designed to smooth the slope (bridges, excavations, landfills, etc.), unless the user has access to a high precision Digital Surface Model (DSM).
-version=0.4
+version=0.5
 author=Antonio Sobral Almeida
 email=66124.almeida@gmail.com
 
 about=To run this plugin, go to Processing menu, open Toolbox window, and look for Road Slope -> Road slope calculator. For more (important) information, visit https://github.com/Almeida100/RSC.
 
-tracker=https://github.com/Almeida100/RSC/issues
-repository=https://github.com/Almeida100/RSC
+tracker=https://github.com/Almeida100/Road-Slope-Calculator/issues
+repository=https://github.com/Almeida100/Road-Slope-Calculator
 # End of mandatory metadata
 
 # Recommended items:
 
 hasProcessingProvider=yes
 # Uncomment the following line and add your changelog:
-# changelog=
+changelog=Added QGIS 4 compatibility metadata and cleaned up processing identifiers for QGIS 4 testing.
 
 # Tags are comma separated with spaces allowed
 tags=distance, geometry, line, processing, routing
 
-homepage=https://github.com/Almeida100
+homepage=https://github.com/Almeida100/Road-Slope-Calculator
 category=Analysis
-icon=icon.png
 # experimental flag
 experimental=False
 
@@ -39,7 +39,7 @@ deprecated=False
 # Check the documentation for more information.
 # plugin_dependencies=
 
-Category of the plugin: Raster, Vector, Database or Web
+# Category of the plugin: Raster, Vector, Database or Web
 # category=
 
 # If the plugin can run on QGIS Server.
